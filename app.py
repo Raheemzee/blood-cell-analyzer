@@ -19,7 +19,7 @@ app.config["RESULT_FOLDER"] = RESULT_FOLDER
 import os
 import requests
 
-MODEL_URL = https://drive.google.com/file/d/1mDP_ymW8T2kJZan4mnAAQYogQHsQa08y/view?usp=drivesdk
+MODEL_URL = https://drive.google.com/uc?export=download&id=1mDP_ymW8T2kJZan4mnAAQYogQHsQa08y
 model_path = "Documents/Python Scripts/blood_cell_app/blood_cell_classifier.pkl"
 # Download the model file if it doesn't exist
 if not os.path.exists(model_path):
