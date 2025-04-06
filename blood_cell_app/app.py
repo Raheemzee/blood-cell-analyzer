@@ -16,7 +16,19 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 app.config["RESULT_FOLDER"] = RESULT_FOLDER
 
 # Load your trained Fastai model
+import os
+import requests
+
+MODEL_URL = https://drive.google.com/file/d/1mDP_ymW8T2kJZan4mnAAQYogQHsQa08y/view?usp=drivesdk
 model_path = "Documents/Python Scripts/blood_cell_app/blood_cell_classifier.pkl"
+# Download the model file if it doesn't exist
+if not os.path.exists(model_path):
+    print("Model not found. Downloading...")
+    response = requests.get(MODEL_URL)
+    with open(model_path, "wb") as f:
+        f.write(response.content)
+    print("Model downloaded.")
+
 learn = load_learner(model_path)
 
 # ------------------ Helper Functions ------------------
