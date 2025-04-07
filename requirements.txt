@@ -4,5 +4,4 @@ opencv-python-headless
 numpy
 werkzeug
 fastai
-os
 gdown
