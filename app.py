@@ -28,6 +28,12 @@ if not os.path.exists(model_path):
     gdown.download(MODEL_URL, model_path, quiet=False)
     print("Model downloaded.")
 
+import pathlib
+import sys
+
+if sys.platform != "win32":
+    pathlib.WindowsPath = pathlib.PosixPath
+
 learn = load_learner(model_path)
 
 # ------------------ Helper Functions ------------------
