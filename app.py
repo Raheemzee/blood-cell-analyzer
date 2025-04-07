@@ -20,7 +20,7 @@ app.config["RESULT_FOLDER"] = RESULT_FOLDER
 #import gdown
 
 
-model_path = "Documents/Python Scripts/blood_cell_app/blood_cell_classifier.pkl"
+model_path = "blood_cell_classifier.pkl"
 
 import pathlib
 import sys
