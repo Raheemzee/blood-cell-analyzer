@@ -7,8 +7,10 @@ from fastai.vision.all import load_learner, PILImage
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = "Documents/Python Scripts/blood_cell_app/uploads"
-RESULT_FOLDER = "Documents/Python Scripts/blood_cell_app/static/results"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
+RESULT_FOLDER = os.path.join(BASE_DIR, "static", "results")
+
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
