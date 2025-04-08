@@ -23,7 +23,7 @@ import gdown
 
 MODEL_ID = "1mNFeOhZ3k7YezjfIcxoPLnM96bpDWJ7z"
 MODEL_URL = f"https://drive.google.com/uc?id={MODEL_ID}"
-model_path = "Documents/Python Scripts/blood_cell_app/blood_cell_classifier.pkl"
+model_path = "blood_cell_classifier.pkl"
 # Download the model file if it doesn't exist
 if not os.path.exists(model_path):
     print("Model not found. Downloading...")
