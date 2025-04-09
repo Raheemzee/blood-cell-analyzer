@@ -22,7 +22,7 @@ import os
 import gdown
 
 MODEL_ID = "1mNFeOhZ3k7YezjfIcxoPLnM96bpDWJ7z"
-MODEL_URL = f"https://drive.google.com/uc?id={MODEL_ID}"
+MODEL_URL = f"https://drive.google.com/uc?export=download&id={MODEL_ID}"
 model_path = os.path.join(BASE_DIR, "blood_cell_classifier.pkl")
 
 # Download the model file if it doesn't exist
